@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: VuforiaConfiguration
+  m_EditorClassIdentifier: 
+  vuforia:
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVl1RlF5SC8vLy8vQUFBQUtGdUlUaExoNUV5RGozeHBTOHI3M3hVcVFvYUU1M01Na3VqKzlodWpsQjl1QTM1eWhlZ1hkdTYzVmxmTVI3d1JPRUNpU3c1UHFkV3FkYXN1Zm5UWEVKUEVrZy9VNmlyZ3E5MjdDN1dWNUsxREdndUhPVUhqM3BlUUlkKzQvUUZES0UwSHJwOSs4SEVkUmQ0RzFZbDJDLzJDRG1yV09SdWMrWVVDYStLR3AxUTJIQXBaNjY4ejUvSUJOL1NZK0ZtYVNaZkEyOG5QVEwraWYvUXZFZmRzemEwSTc4dG1yekF5Zkp6Y2tOeE1pdnhiaVhYaC9jYW5iUXVPbnNRemdQT0tXRDRYaUwvcGlrVjU0TFBJR1U5Q0w3UDZHblpVRFRhLzJKSEhwWkk4aUN1M2dSM0NHcS9PY3RTcXVTamxBZWJySTBRVjQ0TzNneWJacGgwdmFRYzlkWmZOdXNtQ21mZityampFOU5RNEZHYng=
+    delayedInitialization: 0
+    cameraFocusModeSetting: 2
+    cameraDeviceModeSetting: -1
+    maxSimultaneousImageTargets: 2
+    virtualSceneScaleFactor: 1
+    modelTargetRecoWhileExtendedTracked: 1
+    shareRecordingsInITunes: 0
+    logLevel: 0
+    version: 10.18.4
+    eulaAcceptedVersions: '{"Values":["10.18"]}'
+  database:
+    disableModelExtraction: 0
+  shaders:
+    depthMaskShader: {fileID: 4800000, guid: 9894afa5f3a5e4bbca625981beb1b20e, type: 3}
+    outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
+    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  videoBackground:
+    numDivisions: 2
+    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded, type: 3}
+    unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+    videoBackgroundEnabled: 1
+  deviceTracker:
+    autoStartTracker: 1
+    arcoreRequirement: 1
+    autoImportArcore: 1
+    thirdPartyARCoreClientDetected: 0
+  playmode:
+    mRecordingPath: 
+    playModeType: 0
+  webcam:
+    renderTextureLayer: 30
+  packageInformation:
+    ARFoundationVersion: 4.2.8
