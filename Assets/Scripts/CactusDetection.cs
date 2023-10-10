@@ -7,8 +7,8 @@ public class CactusDetection : MonoBehaviour
 
     private Animator cactusAnimator;
 
-    public Transform objectToFollow;
-    public float detectionDistance = 0.10f;
+    public GameObject objectToFollow;
+    public float detectionDistance = 0.5f;
 
 
     private void Start()
@@ -33,16 +33,16 @@ public class CactusDetection : MonoBehaviour
 
         if (objectToFollow != null)
         {
-            float distance = Vector3.Distance(transform.position, objectToFollow.position);
+            float distance = Vector3.Distance(transform.position, objectToFollow.transform.position);
             if (distance <= detectionDistance)
             {
-
+                Debug.Log("hei1");
                 cactusAnimator.SetTrigger("TrAttack");
 
             }
             else
             {
-
+                Debug.Log("hei2");
                 cactusAnimator.SetTrigger("TrIdle");
             }
         }
