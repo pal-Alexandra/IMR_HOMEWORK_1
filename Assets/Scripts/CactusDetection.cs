@@ -6,7 +6,9 @@ public class CactusDetection : MonoBehaviour
 {
 
     private Animator cactusAnimator;
-    public float detectionDistance = 0.1f;
+
+    public Transform objectToFollow;
+    public float detectionDistance = 0.10f;
 
 
     private void Start()
@@ -19,31 +21,31 @@ public class CactusDetection : MonoBehaviour
     {
 
         //pentru testarea punctului b) <=> la apasarea space se activeaza modul attack pt toti cactusii    
-        if(cactusAnimator != null)
+        /*if(cactusAnimator != null)
+          {
+              if (Input.GetKeyDown(KeyCode.Space))
+              {
+                 cactusAnimator.SetTrigger("TrAttack");
+
+              }
+         }*/
+
+
+        if (objectToFollow != null)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            float distance = Vector3.Distance(transform.position, objectToFollow.position);
+            if (distance <= detectionDistance)
             {
+
                 cactusAnimator.SetTrigger("TrAttack");
 
             }
-        }
-
-
-        //incercare punct c)
-        /*GameObject[] cactuses = GameObject.FindGameObjectsWithTag("Cactus");
-
-        foreach(GameObject cactus in cactuses)
-        {
-            if(cactus != gameObject)
+            else
             {
-                float distance = Vector3.Distance(transform.position, cactus.transform.position);
-                if(distance <= detectionDistance)
-                {
-                    cactusAnimator.SetTrigger("TrAttack");
-                    break;
-                }
+
+                cactusAnimator.SetTrigger("TrIdle");
             }
-        }*/
+        }
 
     }
 }
